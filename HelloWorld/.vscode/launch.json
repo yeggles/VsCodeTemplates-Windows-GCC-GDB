@@ -1,0 +1,29 @@
+// Reference:  https://code.visualstudio.com/docs/cpp/config-mingw
+{
+	"version": "0.2.0",
+	"configurations":
+	[
+		{
+			"name": "g++.exe build and debug active file",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+			"args": [],
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"miDebuggerPath": "C:\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+			"setupCommands":
+			[
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "g++.exe build active file"
+		}
+	]
+}

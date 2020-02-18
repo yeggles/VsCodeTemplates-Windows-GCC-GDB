@@ -1,0 +1,17 @@
+{
+	"files.associations":
+	{
+		"*.json": "jsonc",
+		"*.c": "cpp",
+		"*.C": "cpp",
+		"*.cpp": "cpp",
+		"*.CPP": "cpp",
+		"*.cxx": "cpp",
+		"*.CXX": "cpp",
+		"*.h": "cpp",
+		"*.H": "cpp",
+		"*.hpp": "cpp",
+		"*.HPP": "cpp",
+		"vector": "cpp"
+	}
+}

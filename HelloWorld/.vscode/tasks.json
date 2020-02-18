@@ -1,0 +1,33 @@
+// This workspace is based on the setup instructions found here:
+//   https://code.visualstudio.com/docs/cpp/config-mingw
+{
+	"version": "2.0.0",
+	"tasks":
+	[
+		{
+			"type": "shell",
+			"label": "g++.exe build active file",
+			"command": "C:\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args":
+			[
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"problemMatcher":
+			[
+				"$gcc"
+			],
+			"group":
+			{
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation":
+			{
+				"clear": true
+			}
+		}
+	]
+}
